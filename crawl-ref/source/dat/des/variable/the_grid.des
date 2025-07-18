@@ -249,7 +249,7 @@ MAP
 ENDMAP
 
 NAME:     minmay_the_grid_3x2
-DEPTH:    D:9-, Depths, Elf
+DEPTH:    D:4-, Depths, Elf
 ORIENT:   float
 SUBVAULT: A : the_grid
 SUBVAULT: B : the_grid
@@ -285,7 +285,7 @@ MAP
 ENDMAP
 
 NAME:     minmay_the_grid_net
-DEPTH:    D:9-, Depths, Elf
+DEPTH:    D:4-, Depths, Elf
 ORIENT:   float
 SUBVAULT: A : the_grid
 SUBVAULT: B : the_grid
@@ -331,7 +331,7 @@ MAP
 ENDMAP
 
 NAME:     minmay_the_grid_4x2
-DEPTH:    D:9-, Depths, Elf
+DEPTH:    D:4-, Depths, Elf
 ORIENT:   float
 SUBVAULT: A : the_grid
 SUBVAULT: B : the_grid
@@ -369,7 +369,7 @@ MAP
 ENDMAP
 
 NAME:     minmay_the_grid_3x3
-DEPTH:    D:9-, Depths, Elf
+DEPTH:    D:4-, Depths, Elf
 ORIENT:   float
 SUBVAULT: A : the_grid
 SUBVAULT: B : the_grid
@@ -462,7 +462,7 @@ ENDMAP
 
 NAME:       minmay_the_grid_triangle_9x9_recursive_2_mashed
 ORIENT:     float
-DEPTH:      D:9-, Depths, Elf
+DEPTH:      D:4-, Depths, Elf
 SUBVAULT:   A : the_grid_triangle_9x9_prize
 SUBVAULT:   B : the_grid_triangle_9x9
 SUBVAULT:   C : the_grid_triangle_9x9
@@ -532,7 +532,7 @@ ENDMAP
 
 NAME:       minmay_the_grid_triangle_9x9_rhombus_thin_mashed
 ORIENT:     float
-DEPTH:      D:9-, Depths, Elf
+DEPTH:      D:4-, Depths, Elf
 SUBVAULT:   A : the_grid_triangle_9x9
 SUBVAULT:   B : the_grid_triangle_9x9_prize
 SUBVAULT:   C : the_grid_triangle_9x9
@@ -567,7 +567,7 @@ ENDMAP
 
 NAME:       minmay_the_grid_triangle_9x9_line_8_mashed
 ORIENT:     float
-DEPTH:      D:11-, Depths, Elf
+DEPTH:      D:5-, Depths, Elf
 SUBVAULT:   A : the_grid_triangle_9x9
 SUBVAULT:   B : the_grid_triangle_9x9
 SUBVAULT:   C : the_grid_triangle_9x9
@@ -637,7 +637,7 @@ ENDMAP
 
 NAME:       minmay_the_grid_triangle_9x9_rhombus_full_mashed
 ORIENT:     float
-DEPTH:      D:11-, Depths, Elf
+DEPTH:      D:5-, Depths, Elf
 SUBVAULT:   A : the_grid_triangle_9x9
 SUBVAULT:   B : the_grid_triangle_9x9
 SUBVAULT:   C : the_grid_triangle_9x9
@@ -678,7 +678,7 @@ ENDMAP
 # degenerating...
 NAME:       minmay_the_grid_triangle_9x9_recursive_3
 ORIENT:     float
-DEPTH:      D:11-, Depths, Elf
+DEPTH:      D:5-, Depths, Elf
 SUBVAULT:   A : the_grid_triangle_9x9
 SUBVAULT:   B : the_grid_triangle_9x9
 SUBVAULT:   C : the_grid_triangle_9x9
@@ -741,7 +741,7 @@ ENDMAP
 
 NAME:       minmay_the_grid_triangle_9x9_recursive_3_mashed
 ORIENT:     float
-DEPTH:      D:11-, Depths, Elf
+DEPTH:      D:5-, Depths, Elf
 SUBVAULT:   A : the_grid_triangle_9x9
 SUBVAULT:   B : the_grid_triangle_9x9
 SUBVAULT:   C : the_grid_triangle_9x9
@@ -871,7 +871,7 @@ ENDMAP
 #
 NAME:       minmay_the_grid_square_5x5_5x5
 ORIENT:     float
-DEPTH:      D:11-, Depths, Elf
+DEPTH:      D:5-, Depths, Elf
 SUBVAULT:   A : the_grid_square_5x5
 SUBVAULT:   B : the_grid_square_5x5
 SUBVAULT:   C : the_grid_square_5x5
@@ -936,7 +936,7 @@ ENDMAP
 
 NAME:       minmay_the_grid_square_5x5_4x4
 ORIENT:     float
-DEPTH:      D:9-, Depths, Elf
+DEPTH:      D:4-, Depths, Elf
 SUBVAULT:   A : the_grid_square_5x5
 SUBVAULT:   B : the_grid_square_5x5
 SUBVAULT:   C : the_grid_square_5x5
@@ -1022,7 +1022,7 @@ ENDMAP
 
 NAME:       minmay_the_grid_square_5x5_5x5_mashed
 ORIENT:     float
-DEPTH:      D:11-, Depths, Elf
+DEPTH:      D:5-, Depths, Elf
 SUBVAULT:   A : the_grid_square_5x5
 SUBVAULT:   B : the_grid_square_5x5
 SUBVAULT:   C : the_grid_square_5x5
@@ -1089,7 +1089,7 @@ ENDMAP
 
 NAME:       minmay_the_grid_square_5x5_4x4_mashed
 ORIENT:     float
-DEPTH:      D:11-, Depths, Elf
+DEPTH:      D:5-, Depths, Elf
 SUBVAULT:   A : the_grid_square_5x5
 SUBVAULT:   B : the_grid_square_5x5
 SUBVAULT:   C : the_grid_square_5x5
@@ -1141,7 +1141,7 @@ MAP
 ENDMAP
 
 NAME:       minmay_the_grid_square_5x5_3x3_mashed
-DEPTH:      D:11-, Depths, Elf
+DEPTH:      D:5-, Depths, Elf
 SUBVAULT:   A : the_grid_square_5x5
 SUBVAULT:   B : the_grid_square_5x5
 SUBVAULT:   C : the_grid_square_5x5
@@ -1235,7 +1235,7 @@ ENDMAP
 
 NAME:       minmay_the_grid_four_pointed_star_mashed
 ORIENT:     float
-DEPTH:      D:9-, Depths, Elf
+DEPTH:      D:4-, Depths, Elf
 SUBVAULT:   A : the_grid_triangle_9x9
 SUBVAULT:   B : the_grid_triangle_9x9
 SUBVAULT:   C : the_grid_triangle_9x9
@@ -1386,7 +1386,7 @@ ENDMAP
 
 NAME:       minmay_the_grid_octo_tiled_squarecenter_mashed
 ORIENT:     float
-DEPTH:      D:11-, Depths, Elf
+DEPTH:      D:5-, Depths, Elf
 SUBVAULT:   A : the_grid_octo
 SUBVAULT:   B : the_grid_octo
 SUBVAULT:   C : the_grid_octo
@@ -1439,7 +1439,7 @@ ENDMAP
 
 NAME:       minmay_the_grid_octo_tiled_octocenter_mashed
 ORIENT:     float
-DEPTH:      D:11-, Depths, Elf
+DEPTH:      D:5-, Depths, Elf
 SUBVAULT:   A : the_grid_octo
 SUBVAULT:   B : the_grid_octo
 SUBVAULT:   C : the_grid_octo

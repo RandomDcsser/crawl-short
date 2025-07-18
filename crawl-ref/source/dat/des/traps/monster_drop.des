@@ -36,9 +36,9 @@ end
 # a basket of spiders or snakes / a klown kar in Zot
 #
 NAME:   drop_trap
-DEPTH:  D:12-, Depths, Vaults, Elf, Spider, Snake, Zot
+DEPTH:  D:6-, Depths, Vaults, Elf, Spider, Snake, Zot
 TAGS:   allow_dup extra luniq_monster_drop transparent
-WEIGHT: 100 (D:12-, Depths, Vaults, Elf, Spider, Snake), 20 (Zot)
+WEIGHT: 100 (D:6-, Depths, Vaults, Elf, Spider, Snake), 20 (Zot)
 KFEAT:  ^ = pressure plate trap
 {{
  local trigger_data

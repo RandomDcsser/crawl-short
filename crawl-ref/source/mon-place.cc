@@ -179,7 +179,7 @@ static int _ood_fuzzspan(level_id &place)
 
     // In early D, since player and enemy strength scale so rapidly
     // with depth, spawn OODs from much closer depths.
-    // Only up to D:4 on D:2, up to D:6 on D:3, and D:8 on D:4.
+    // Only up to D:4 on D:2, up to D:6 on D:3, and D:4 on D:4.
     return place.depth;
 }
 
@@ -634,7 +634,7 @@ monster* place_monster(mgen_data mg, bool force_pos, bool dont_place)
         return 0;
 
     bool create_band = mg.permit_bands();
-    // If we drew an OOD monster and the level has less absdepth than D:13
+    // If we drew an OOD monster and the level has less absdepth than D:6
     // disable band generation. This applies only to randomly picked monsters
     // -- chose_ood_monster will never be set true for explicitly specified
     // monsters in vaults and other places.

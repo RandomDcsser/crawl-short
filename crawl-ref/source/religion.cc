@@ -3616,9 +3616,7 @@ static void _set_initial_god_piety()
 
     maybe_clear_traitor(you.religion);
 
-    // Tutorial needs berserk usable.
-    if (crawl_state.game_is_tutorial())
-        gain_piety(30, 1, false);
+    gain_piety(30, 1, false);
 
     _apply_monk_bonus();
     _transfer_good_god_piety();

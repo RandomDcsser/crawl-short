@@ -70,7 +70,7 @@ end
 
 --[[
 Determine if we're placing a hard difficulty ice cave map. Possible depths for
-easy ice caves are D:11-13, Lair, Orc. Hard ice caves are placed in Elf and the
+easy ice caves are D:5-6, Lair, Orc. Hard ice caves are placed in Elf and the
 Lair roulette branches. This function must be updated if the depth range of ice
 cave changes, which is set by the default-depth statement of the entry vault
 section or by the entry maps themselves.
@@ -456,7 +456,7 @@ end
 ###############################################################################
 # Entry vaults that place for both ice cave difficulties.
 
-default-depth: D:11-13, Lair, Orc, Elf, Swamp, Shoals, Snake, Spider
+default-depth: D:5-6, Lair, Orc, Elf, Swamp, Shoals, Snake, Spider
 
 NAME:   portal_ice_cave_entry_pillars_1
 TAGS:   transparent
@@ -522,7 +522,7 @@ ENDMAP
 ###############################################################################
 # Entry vaults that only place easy ice cave entrances
 
-default-depth: D:11-13, Lair, Orc
+default-depth: D:5-6, Lair, Orc
 
 NAME:   portal_ice_cave_entry_imps
 TAGS:   patrolling no_monster_gen transparent
@@ -538,7 +538,7 @@ ENDMAP
 
 NAME:   portal_ice_cave_entry_animals_and_master
 TAGS:   patrolling no_monster_gen
-DEPTH:  D:11-13, Lair:3-, Orc
+DEPTH:  D:5-6, Lair:3-, Orc
 WEIGHT: 5
 : ice_cave_portal(_G)
 MONS:   wolf, yak, polar bear, rime drake, ice dragon

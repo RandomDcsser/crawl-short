@@ -6,7 +6,7 @@
 # since those cleave and reach.) Castle like layout, with inner bailey and
 # moat. Medieval warfare and heraldry themed.
 #
-# Currently, the depth is fixed at D:7-10.
+# Currently, the depth is fixed at D:4-5.
 #
 ##############################################################################
 
@@ -136,7 +136,7 @@ end
 }}
 
 # Basic bailey entries ##########################################
-default-depth: D:7-10
+default-depth: D:4-5
 
 NAME: enter_bailey_2
 TAGS: transparent
@@ -1260,7 +1260,7 @@ KFEAT:  D = deep_water
 SUBST:  C : CC., ! = t:20 x c:3, - = t c:30 x
 NSUBST: ' = 1:1 / 15 = 1... / 2 = 2... / *:.
 NSUBST: " = 1:2 / 8 = 2... / *:., 3 = 1:3334 / *:.
-NSUBST: d = 1:d / 1:e / 1:ef / * = d:14 e:1 f:1
+NSUBST: d = 1:d / 1:e / 1:ef / * = d:6 e:1 f:1
 FTILE:  ;tA< = floor_grass
 : bailey_setup(_G)
 MAP

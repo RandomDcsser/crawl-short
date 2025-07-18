@@ -479,7 +479,7 @@ TAGS:   overwritable layout allow_dup unrand central layout_type_open_caves
     wscale = util.random_range_real(.06, .1)
     polarise = crawl.one_chance_in(4)
   else
-    -- Zot:5
+    -- Zot:3
     if you.at_branch_bottom() then
       reps = crawl.random2(4)+0.5
       xoff = 0
@@ -504,7 +504,7 @@ TAGS:   overwritable layout allow_dup unrand central layout_type_open_caves
     end
   end
 
-  -- Zot:5 always gets a polar layout.
+  -- Zot:3 always gets a polar layout.
   if you.in_branch("zot") and you.at_branch_bottom() then
     polarise = true
   end

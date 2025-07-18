@@ -87,7 +87,7 @@ function necropolis_portal_entry(e)
     -- their odds on the earliest floors. Vaults:1-4 Neccropolis entries are
     -- placed seperately via vaults_default_options() and pick_room().
     e.chance(350)
-    e.depth_chance("D:5-7", 275)
+    e.depth_chance("D:3-4", 275)
     e.depth_chance("Vaults", 0)
     if crawl.game_started() then
       e.tags(necropolis_tag())
@@ -115,9 +115,9 @@ end
 
 function necropolis_difficulty()
   if you.in_branch("D") then
-    if you.depth() < 8 then
+    if you.depth() < 3 then
       return "pre_temple_d"
-    elseif you.depth() < 12 then
+    elseif you.depth() < 5 then
       return "pre_lair_d"
     else
       return "post_lair_d"
@@ -174,18 +174,18 @@ function necropolis_generic_spawns(e, _0, _9, _8)
     _8 = "8"
   end
   if dgn.persist.necropolis_difficulty == "pre_temple_d" then
-    e.kmons(_0 .. " = place:D:5 w:40 / spectral jackal")
-    e.kmons(_9 .. " = place:D:7 w:30 / spectre place:D:8")
-    e.kmons(_8 .. " = place:D:9 w:15 / wraith w:5")
+    e.kmons(_0 .. " = place:D:3 w:40 / spectral jackal")
+    e.kmons(_9 .. " = place:D:4 w:30 / spectre place:D:4")
+    e.kmons(_8 .. " = place:D:5 w:15 / wraith w:5")
   elseif dgn.persist.necropolis_difficulty == "pre_lair_d" then
-    e.kmons(_0 .. " = place:D:8 w:60 / spectre place:D:9")
-    e.kmons(_9 .. " = place:D:11 w:40 / spectre place:D:12 / wraith w:5")
-    e.kmons(_8 .. " = place:D:14 w:30 / \
-                      gargoyle / spectre place:D:15 w:5 / shadowghast w:5")
+    e.kmons(_0 .. " = place:D:4 w:60 / spectre place:D:5")
+    e.kmons(_9 .. " = place:D:5 w:40 / spectre place:D:6 / wraith w:5")
+    e.kmons(_8 .. " = place:D:7 w:30 / \
+                      gargoyle / spectre place:D:7 w:5 / shadowghast w:5")
   elseif dgn.persist.necropolis_difficulty == "post_lair_d" then
-    e.kmons(_0 .. " = place:D:12 w:40 / \
-                      simulacrum place:D:12 / spectre place:D:12 / \
-                      zombie place:D:12 / laughing skull")
+    e.kmons(_0 .. " = place:D:6 w:40 / \
+                      simulacrum place:D:6 / spectre place:D:6 / \
+                      zombie place:D:6 / laughing skull")
     e.kmons(_9 .. " = freezing wraith / gargoyle / boggart / necromancer")
     e.kmons(_8 .. " = very ugly thing / deep troll / phantasmal warrior / \
                       shadow dragon w:5 / spectral fire dragon / \
@@ -279,16 +279,16 @@ function necropolis_portal_setup(e)
   -- Not actually used outside of summoning;
   -- see the generic_spawns function above.
   if dgn.persist.necropolis_difficulty == "pre_temple_d" then
-    e.set_random_mon_list("phantom / spectre place:D:6")
+    e.set_random_mon_list("phantom / spectre place:D:3")
   elseif dgn.persist.necropolis_difficulty == "pre_lair_d" then
-    e.set_random_mon_list("wraith / shadowghast / spectre place:D:9")
+    e.set_random_mon_list("wraith / shadowghast / spectre place:D:5")
   elseif dgn.persist.necropolis_difficulty == "lair" then
     e.set_random_mon_list("wraith / shadowghast / spectral cane toad")
   elseif dgn.persist.necropolis_difficulty == "orc" then
     e.set_random_mon_list("shadowghast / spectral two-headed ogre")
   elseif dgn.persist.necropolis_difficulty == "post_lair_d" then
     e.set_random_mon_list("wraith w:5 / shadowghast w:5 / vampire / \
-                           freezing wraith w:5 / spectre place:D:12")
+                           freezing wraith w:5 / spectre place:D:6")
   elseif necropolis_in_lair_branch() then
     e.set_random_mon_list("vampire w:5 / freezing wraith w:5 / \
                            flayed ghost / phantasmal warrior / \
@@ -446,7 +446,7 @@ function ghost_flavour_unrand_chance(e, subglyph, unglyph, unrand)
 end
 
 -- Loot scaling that gradually upgrades items on glyphs 'd' and 'e' with depth
--- of placement. Starting from D:8, 'd' has a chance to become a good potion or
+-- of placement. Starting from D:4, 'd' has a chance to become a good potion or
 -- scroll item (according to dgn.loot_potions and dgn.loot_scrolls), an
 -- auxiliary armour item, or a jewellery item. The latter two can be good_item
 -- and then randart with increasing depth.
@@ -582,7 +582,7 @@ One-off and two-off vault functions left in ghost.lua:
 # the point is to be burying the dead only inside the Necropolis.
 #############################################################################
 
-default-depth: D:5-, Lair, Orc, Elf, Snake, !Snake:$, Swamp, !Swamp:$, \
+default-depth: D:3-, Lair, Orc, Elf, Snake, !Snake:$, Swamp, !Swamp:$, \
                Shoals, !Shoals:$, Spider, !Spider:$, Vaults, !Vaults:$, \
                Depths, Crypt
 
@@ -839,7 +839,7 @@ ENDMAP
 #
 # TODO: further decorations for future layouts could include:
 #   * fountains of ectoplasm (needs lots of write-ups)
-#   * altars to Hepliakqana (has to exclude pre-D:11 spawns)
+#   * altars to Hepliakqana (has to exclude pre-D:6 spawns)
 #   * rock and stone tiles from the original branch (needs V/E and U/C tricks)
 #   * a transporter entrance seperated from the ghost vaults?
 #############################################################################
@@ -1920,15 +1920,15 @@ TAGS:   luniq_necropolis_ghost_undead_centric
 # Daggers are the most thematic for necromancers.
 : local sl = 0
 : if dgn.persist.necropolis_difficulty == "pre_temple_d" then
-MONS:   jackal draugr w:2 / adder draugr w:2 / orc draugr w:2 / zombie place:D:7
+MONS:   jackal draugr w:2 / adder draugr w:2 / orc draugr w:2 / zombie place:D:4
 KITEM:  ? = dagger ego:pain / dagger ego:draining
 SUBST:  d = *%, e = %$, f = ?, ghij = $
 NSUBST: 1 = 2=1 / 1---
 :   sl = 5
 : elseif dgn.persist.necropolis_difficulty == "pre_lair_d" then
 MONS:   centaur draugr w:2 / ogre draugr w:2 / steam dragon draugr w:2 / \
-        manticore draugr w:2 / water moccasin draugr w:2 / zombie place:D:11 / \
-        spectre place:D:11 /  simulacrum place:D:11
+        manticore draugr w:2 / water moccasin draugr w:2 / zombie place:D:5 / \
+        spectre place:D:5 /  simulacrum place:D:5
 KITEM:  ? = dagger ego:pain / dagger ego:draining
 SUBST:  d = *, e = *%, f = %$$$, ghij = $
 NSUBST: 1 = 2:1 / * = 1-
@@ -2690,7 +2690,7 @@ KITEM:  ! = wellspring talisman
 SUBST:  d = *%, e = %, f = ~~~??, ghij = $
 NSUBST: - = 2=0 / 2=01'' / 1:12 / 1:12'' / *:'
 : elseif dgn.persist.necropolis_difficulty == "pre_lair_d" then
-KMONS:  0 = place:D:9 simulacrum
+KMONS:  0 = place:D:5 simulacrum
 KITEM:  o = ring of fire pre_id / ring of fire randart pre_id w:5
 KITEM:  P = fire dragon scales
 KITEM:  ? = rimehorn talisman
@@ -2698,7 +2698,7 @@ KITEM:  ! = wellspring talisman
 SUBST:  d = *, e = *%, f = %, g = ~?, ghij = $
 NSUBST: - = 3 = 001 / 4 = 01'' / 1:2 / 3 = 2' / 1:34'''''' / *:'
 : elseif dgn.persist.necropolis_difficulty == "post_lair_d" then
-KMONS:  0 = place:D:13 simulacrum
+KMONS:  0 = place:D:6 simulacrum
 KITEM:  o = ring of fire pre_id / ring of fire randart pre_id
 KITEM:  P = fire dragon scales good_item
 KITEM:  ? = rimehorn talisman / rimehorn talisman randart

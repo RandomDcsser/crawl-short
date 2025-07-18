@@ -385,7 +385,7 @@ static void _get_dungeon_wall_tiles_by_depth(int depth, vector<tileidx_t>& t)
         t.push_back(TILE_WALL_BRICK_DARK_4_TORCH);
     }
     if (depth == brdepth[BRANCH_DUNGEON])
-        t.push_back(TILE_WALL_BRICK_DARK_4_TORCH);  // torches are more common on D:14...
+        t.push_back(TILE_WALL_BRICK_DARK_4_TORCH);  // torches are more common on D:7...
 }
 
 static void _get_depths_wall_tiles_by_depth(int depth, vector<tileidx_t>& t)

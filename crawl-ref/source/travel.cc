@@ -1989,7 +1989,7 @@ static void _find_parent_branch(branch_type br, branch_type *pb, int *pd)
 // repeat the operation with the parent branch of the given branch.
 //
 // As an example of what it does, assume this dungeon structure
-//   Stairs to lair on D:11
+//   Stairs to lair on D:5
 //   Stairs to snake pit on lair:5
 //
 // If level 3 of the snake pit is the level we want to track back from,

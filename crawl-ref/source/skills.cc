@@ -2550,7 +2550,7 @@ int species_apt(skill_type skill, species_type species)
 
 float species_apt_factor(skill_type sk, species_type sp)
 {
-    return apt_to_factor(species_apt(sk, sp));
+    return apt_to_factor(species_apt(sk, sp) + 6);
 }
 
 vector<skill_type> get_crosstrain_skills(skill_type sk)

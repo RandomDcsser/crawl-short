@@ -11,6 +11,7 @@ spells:
   - SPELL_DISCHARGE
   - SPELL_SWIFTNESS
   - SPELL_AIRSTRIKE
+  - SPELL_PLASMA_BEAM
 equipment:
   - "robe"
   - "potion of magic"

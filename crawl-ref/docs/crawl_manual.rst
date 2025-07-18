@@ -2621,9 +2621,9 @@ Ctrl-F
   Find. This searches in stashes and shops, you can use regular expressions and
   also terms like 'long blades', 'shop', 'altar', 'artefact'. If you are looking
   for altars to a special god, a search for 'Trog' , etc. works. A string like
-  'D:13' will list all known items on that level. 'D:1}' will search for items
-  on level 1 only, as opposed to 'D:1', which will also list items on D:10
-  through D:15. Once the list of all found places is displayed, you can cause
+  'D:6' will list all known items on that level. 'D:1}' will search for items
+  on level 1 only, as opposed to 'D:1', which will also list items on D:5
+  through D:7. Once the list of all found places is displayed, you can cause
   auto-travel to go there (press the associated letter) or you can examine the
   items (press ? followed by the letter).
 

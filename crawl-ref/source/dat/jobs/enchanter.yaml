@@ -10,6 +10,7 @@ spells:
   - SPELL_CONFUSING_TOUCH
   - SPELL_TUKIMAS_DANCE
   - SPELL_GLOOM
+  - SPELL_VIOLENT_UNRAVELLING
 equipment:
   - "dagger plus:1"
   - "robe"

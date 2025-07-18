@@ -488,7 +488,7 @@ function trove_unrand_chances(e, n_glyphs, unrand, criteria, i_glyphs)
 end
 }}
 
-default-depth: D:12-, Swamp, Snake, Shoals, Spider
+default-depth: D:6-, Swamp, Snake, Shoals, Spider
 
 ##############################################################################
 #

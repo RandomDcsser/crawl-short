@@ -12,6 +12,7 @@ spells:
   - SPELL_CALL_IMP
   - SPELL_GRAVE_CLAW
   - SPELL_MEPHITIC_CLOUD
+  - SPELL_ENGLACIATION
 equipment:
   - "dagger"
   - "robe"

@@ -2011,7 +2011,7 @@ ENDMAP
 
 NAME:    nicolae_crypt_knee_deep_in_the_dead
 TAGS:    transparent no_monster_gen
-DEPTH:   Crypt:2-
+DEPTH:   Crypt:1-
 KMONS:   0 = 0 zombie / 0 draugr / 0 simulacrum / 0 spectral thing
 KMONS:   9 = 9 zombie / 9 draugr / 9 simulacrum / 9 spectral thing
 KMONS:   8 = 8 zombie / 8 draugr / 8 simulacrum / 8 spectral thing
@@ -2461,7 +2461,7 @@ ENDMAP
 
 NAME:    nicolae_crypt_tutankhamun
 TAGS:    transparent
-DEPTH:   Crypt:2-
+DEPTH:   Crypt:1-
 KMONS:   D = guardian mummy / skeletal warrior / ancient champion / eidolon
 KMONS:   M = mummy priest / lich / ancient lich w:2 / dread lich w:2 / \
              royal mummy w:2

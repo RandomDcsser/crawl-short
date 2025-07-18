@@ -44,8 +44,8 @@ function ossuary_portal(e)
         feat_tile = "dngn_portal_ossuary_gone",
         msg = messager })
   e.tags("uniq_ossuary no_monster_gen chance_ossuary")
-  e.depth_chance("D:4-5", 500)
-  e.depth_chance("D:6-7", 550)
+  e.depth_chance("D:2-3", 500)
+  e.depth_chance("D:3-4", 550)
   e.kfeat("O = enter_ossuary")
   e.colour("123' = yellow")
   e.colour("c = white")
@@ -90,7 +90,7 @@ end
 }}
 
 #### Portal entry vaults.
-default-depth: D:4-7
+default-depth: D:3-4
 
 NAME:   enter_ossuary_1
 TAGS:   transparent

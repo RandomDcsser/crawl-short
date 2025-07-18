@@ -13,7 +13,7 @@
 
 : crawl_require('dlua/vault.lua')
 
-default-depth: D:12-, !D:$, Depths, !Depths:$
+default-depth: D:6-, !D:$, Depths, !Depths:$
 
 ###############################################################################
 
@@ -238,7 +238,7 @@ ENDMAP
 # thingy vault.
 #
 NAME:   thingy_vault
-DEPTH:  D:12-, !D:$, Depths, !Depths:$
+DEPTH:  D:6-, !D:$, Depths, !Depths:$
 ORIENT: southwest
 TAGS:   no_rotate
 MAP
@@ -276,7 +276,7 @@ ENDMAP
 #
 NAME:   hourglass_vault
 ORIENT: southeast
-DEPTH:  D:12-, !D:$, Depths, !Depths:$
+DEPTH:  D:6-, !D:$, Depths, !Depths:$
 TAGS:   no_rotate no_hmirror
 MAP
 xxxxxxxxxxxxxx@xxxxxxxxxxxxxxxx
@@ -353,7 +353,7 @@ ENDMAP
 # four-leaf vault
 #
 NAME:   four-leaf_vault
-DEPTH:  D:12-, !D:$, Depths, !Depths:$
+DEPTH:  D:6-, !D:$, Depths, !Depths:$
 ORIENT: northwest
 MAP
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
@@ -393,7 +393,7 @@ ENDMAP
 # Cross-vault
 #
 NAME:   cross_vault
-DEPTH:  D:12-, !D:$, Depths, !Depths:$
+DEPTH:  D:6-, !D:$, Depths, !Depths:$
 ORIENT: northwest
 MAP
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
@@ -506,7 +506,7 @@ ENDMAP
 
 NAME:   mludivico_vault
 ORIENT: southwest
-DEPTH:  D:12-, !D:$
+DEPTH:  D:6-, !D:$
 MONS:   hell hound, necromancer, occultist / arcanist, orange demon, rust devil
 MONS:   hell knight, great orb of eyes
 MAP
@@ -542,7 +542,7 @@ ENDMAP
 NAME:   kennysheep_water_balloons
 TAGS:   no_pool_fixup
 ORIENT: northwest
-DEPTH:  D:14-, Depths
+DEPTH:  D:7-, Depths
 NSUBST: % = 5:|
 SUBST:  % : %$
 MAP
@@ -576,7 +576,7 @@ ENDMAP
 NAME:    minmay_open_boxes_in_corner
 ORIENT:  southeast
 TAGS:    transparent
-DEPTH:   D:12-, !D:$, Depths, !Depths:$
+DEPTH:   D:6-, !D:$, Depths, !Depths:$
 SHUFFLE: $*%
 SUBST:   c : xcv
 SUBST:   $ = $$$$%*
@@ -604,7 +604,7 @@ ENDMAP
 
 NAME:    minmay_connected_boxes_in_corner
 ORIENT:  southeast
-DEPTH:   D:12-, !D:$, Depths
+DEPTH:   D:6-, !D:$, Depths
 SHUFFLE: $*%, ABCDEFH
 SUBST:   $ = $$$$%*..
 SUBST:   % = %%%%$*.....
@@ -653,7 +653,7 @@ ENDMAP
 NAME:    minmay_triangles_in_corner
 ORIENT:  southeast
 TAGS:    transparent
-DEPTH:   D:12-, !D:$, Depths
+DEPTH:   D:6-, !D:$, Depths
 SHUFFLE: $%
 SUBST:   $ = $$$$%* .:180
 SUBST:   % = %%%%$* .:180
@@ -691,7 +691,7 @@ ENDMAP
 
 NAME:    minmay_isolated_rectangles_in_corner
 ORIENT:  southeast
-DEPTH:   D:12-, !D:$, Depths, !Depths:$
+DEPTH:   D:6-, !D:$, Depths, !Depths:$
 SHUFFLE: ([{)]}, *$
 SUBST:   * = %**|$....
 SUBST:   $ = $$$$%
@@ -724,7 +724,7 @@ ENDMAP
 
 NAME:    minmay_connected_triangles_in_corner
 ORIENT:  southeast
-DEPTH:   D:12-, !D:$, Depths, !Depths:$
+DEPTH:   D:6-, !D:$, Depths, !Depths:$
 TAGS:    no_descent
 SHUFFLE: ([{)]}, 890, |*%$
 SUBST:   c : cv
@@ -759,7 +759,7 @@ ENDMAP
 
 NAME:   minmay_expanding_squares
 ORIENT: southeast
-DEPTH:  D:12-, !D:$, Depths
+DEPTH:  D:6-, !D:$, Depths
 MAP
 @xxxxxxxxxxxxxxxxxxxxxx
 x.0ccxxxxxxxxxxxxxxxxxx
@@ -788,7 +788,7 @@ ENDMAP
 
 NAME:   minmay_expanding_circles
 ORIENT: southeast
-DEPTH:  D:12-, !D:$, Depths
+DEPTH:  D:6-, !D:$, Depths
 KMONS:  0 = 0
 KMONS:  8 = 8
 KMONS:  9 = 9
@@ -820,7 +820,7 @@ ENDMAP
 
 NAME:   minmay_box_of_statues
 ORIENT: southeast
-DEPTH:  D:12-, !D:$, Depths
+DEPTH:  D:6-, !D:$, Depths
 SUBST:  c : cv
 MAP
 ccccccccccccccc+ccc
@@ -847,7 +847,7 @@ ENDMAP
 NAME:    minmay_nested_s
 ORIENT:  southwest
 TAGS:    no_descent
-DEPTH:   D:12-, !D:$, Depths, !Depths:$
+DEPTH:   D:6-, !D:$, Depths, !Depths:$
 SUBST:   c : cv
 SHUFFLE: ([{, )]}
 MAP
@@ -898,7 +898,7 @@ ENDMAP
 ################################################################################
 # Two diamond shaped vaults
 NAME:   evilmike_diamond_1
-DEPTH:  D:12-, !D:$, Depths, !Depths:$
+DEPTH:  D:6-, !D:$, Depths, !Depths:$
 ORIENT: northwest
 NSUBST: | = 2:* / *:|
 SUBST:  X : c.., Y : c..
@@ -940,7 +940,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.@
 ENDMAP
 
 NAME:   evilmike_diamond_2
-DEPTH:  D:12-, !D:$, Depths
+DEPTH:  D:6-, !D:$, Depths
 ORIENT: southeast
 SUBST:  X : xxxnb.
 SUBST:  c : ccxxb
@@ -1044,7 +1044,7 @@ ENDMAP
 
 NAME:   minmay_tri_stars
 ORIENT: north
-DEPTH:  D:12-, !D:$, Depths, !Depths:$
+DEPTH:  D:6-, !D:$, Depths, !Depths:$
 SUBST:  x : xvb
 MONS:   occultist w:150 / arcanist w:150 / deep elf pyromancer w:60 / \
         deep elf zephyrmancer w:60 / orc wizard / orc sorcerer w:35 / \
@@ -1195,7 +1195,7 @@ ENDMAP
 NAME:   minmay_stepped
 ORIENT: northwest
 TAGS:   transparent
-DEPTH:  D:12-, !D:$, Depths
+DEPTH:  D:6-, !D:$, Depths
 SUBST:  z : xcvb
 SUBST:  9 = 9...
 MAP
@@ -1231,7 +1231,7 @@ ENDMAP
 NAME:   minmay_outward_triangles
 ORIENT: northwest
 TAGS:   transparent
-DEPTH:  D:12-, !D:$, Depths
+DEPTH:  D:6-, !D:$, Depths
 SUBST:  z : xcvb
 SUBST:  9 = 9.
 MAP
@@ -1266,7 +1266,7 @@ ENDMAP
 
 NAME:   minmay_wizard_corner
 ORIENT: southeast
-DEPTH:  D:12-
+DEPTH:  D:6-
 KMONS:  1 = occultist / arcanist / nothing w:280
 KMONS:  * = occultist / arcanist / nothing w:20
 KITEM:  * = *
@@ -1408,7 +1408,7 @@ ENDMAP
 NAME:   kennysheep_snake
 ORIENT: west
 TAGS:   no_trap_gen no_monster_gen
-DEPTH:  D:12-, !D:$, Depths, !Depths:$, Snake
+DEPTH:  D:6-, !D:$, Depths, !Depths:$, Snake
 MAP
      cccccccccc
     cc........cc
@@ -1640,7 +1640,7 @@ ENDMAP
 NAME:   kennysheep_large_spiral
 TAGS:   no_trap_gen no_item_gen
 ORIENT: northwest
-DEPTH:  D:14-, Depths, !Depths:$
+DEPTH:  D:7-, Depths, !Depths:$
 : ks_random_setup(_G, true)
 SUBST:  X = x
 MAP
@@ -1673,7 +1673,7 @@ Xcw@xccccccccccccccccccccc
 ENDMAP
 
 NAME:   minmay_tile_spiral
-DEPTH:  D:11-, Depths
+DEPTH:  D:5-, Depths
 ORIENT: southwest
 SUBST:  x : cvb, z : cvb, y : cvbnTUVtG8|, X = x
 : if you.absdepth() < 16 then
@@ -1716,7 +1716,7 @@ ENDMAP
 
 NAME:    minmay_tearing_corner
 TAGS:    transparent
-DEPTH:   D:11-, Depths
+DEPTH:   D:5-, Depths
 ORIENT:  northeast
 SUBST:   x : ccvvb, X = x
 : if you.absdepth() < 16 then
@@ -1775,7 +1775,7 @@ ENDMAP
 
 NAME:   nicolae_aperiodic_l_corner
 TAGS:   transparent
-DEPTH:  D:12-, Depths
+DEPTH:  D:6-, Depths
 ORIENT: southwest
 SUBST: 0 = .:50 0, 9 = .:50 9, 8 = .:50 8, % = .:50 %, * = .:50 *, | = .:50 |
 MAP

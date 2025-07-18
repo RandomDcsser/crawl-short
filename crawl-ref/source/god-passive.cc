@@ -1549,7 +1549,7 @@ static coord_def _find_shadow_zap_position(zap_type ztype, coord_def& aim)
     // try to find a vaguely 'best' shot.
     //
     // Since sometimes there will be a very large number of targets visible
-    // (eg: Zigs, Vaults:5) without many of those targets being accessible,
+    // (eg: Zigs, Vaults:3) without many of those targets being accessible,
     // we limit the number of successful shots we test to 10.
     int num_tests = 0;
     for (size_t i = 0; i < valid_spots.size(); ++i)

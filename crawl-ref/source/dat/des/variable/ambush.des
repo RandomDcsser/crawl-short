@@ -7,7 +7,7 @@
 # from 8 to 24 monsters. Very random, middle part is all subvaults.
 #
 # There is a lair variant that is (mostly) a joke vault; all other variants
-# appear no earlier than D:14.
+# appear no earlier than D:7.
 {{
 function ambush_stairs(e)
     if you.in_branch("Dis") or you.in_branch("Coc") or you.in_branch("Tar")

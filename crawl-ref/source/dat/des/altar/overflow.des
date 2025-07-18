@@ -1351,9 +1351,9 @@ MONS:    orc warrior ; flail good_item . kite shield . chain mail good_item / \
                           chain mail good_item / \
          skeletal warrior ; flail good_item . kite shield . \
                             chain mail good_item
-# Generate two ancestor monsters for D:10-D:12.
+# Generate two ancestor monsters for D:5-D:6.
 NSUBST:  123 = 1=.
-# For D:13- and Depths, generate all three ancestor monsters.
+# For D:6- and Depths, generate all three ancestor monsters.
 :     else
 MONS:    ogre mage; lajatang ego:freezing / \
          molten gargoyle ; lajatang ego:flaming

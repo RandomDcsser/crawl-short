@@ -329,12 +329,12 @@ local function start_end_levels()
   if #args == 0 then
     script.usage([[
 Usage: place-population <start> [<end>]
-For instance: place-population Shoals:1 Shoals:4
+For instance: place-population Shoals:1 Shoals:2
               place-population Lair:3
 
 You may optionally force branches to have entrances at specific places
 with:
-              place-population -reset=Lair:1=8,Snake:1=3 Snake:4
+              place-population -reset=Lair:1=8,Snake:1=3 Spider:2
 
 With the general form:
 

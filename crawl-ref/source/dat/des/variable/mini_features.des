@@ -108,7 +108,7 @@ ENDMAP
 # Small statue alley (Eino)
 NAME:   small_statue_alley_a
 TAGS:   uniq_statue_alley transparent extra decor
-DEPTH:  D:10-
+DEPTH:  D:5-
 WEIGHT: 7
 SUBST:  F = G:99 F:1
 KMONS:  F = orange crystal statue / obsidian statue / ice statue
@@ -167,7 +167,7 @@ xx.xx
 ENDMAP
 
 NAME:  fungi_pond_lemuel
-DEPTH: D:8-, Lair
+DEPTH: D:4-, Lair
 TAGS:  allow_dup extra transparent
 MONS:  fungus
 SUBST: 1 = 1.
@@ -967,7 +967,7 @@ ENDMAP
 
 NAME:   minmay_crystal_water
 TAGS:   extra decor
-DEPTH:  D:8-, Depths
+DEPTH:  D:4-, Depths
 MAP
 wwwwwwwww
 wbwwwwwbw
@@ -1029,7 +1029,7 @@ ENDMAP
 
 NAME:   minmay_curled_crystal
 TAGS:   transparent extra decor
-DEPTH:  D:8-, Depths, Elf
+DEPTH:  D:4-, Depths, Elf
 WEIGHT: 3
 MAP
 ................
@@ -1990,7 +1990,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 ENDMAP
 
 NAME: nicolae_twisting_strands
-DEPTH: D:10-, Depths, Elf
+DEPTH: D:5-, Depths, Elf
 TAGS: transparent extra decor
 SHUFFLE: '!/^;, cd/AB
 SUBST: '; : e., ! = x, ^ = ., x : x_, A = a, B = b
@@ -2026,7 +2026,7 @@ xxxxxxxx!'b.@.c'!xxxxxxxx
 ENDMAP
 
 NAME: nicolae_wwwww
-DEPTH: D:8-, Depths, Elf
+DEPTH: D:4-, Depths, Elf
 TAGS: decor extra transparent
 SUBST: b : bcvmx
 MAP
@@ -2453,7 +2453,7 @@ x.....wccccccw......
 ENDMAP
 
 NAME: nicolae_two_hexagons
-DEPTH: D:8-, Depths
+DEPTH: D:4-, Depths
 TAGS: transparent extra decor
 SHUFFLE: ABCDEF, GHIJK, LMNOPQ, RSTUVW
 SUBST: AGMNOPQSTUVW = ., BCDEFHIJKLR = x
@@ -2808,7 +2808,7 @@ ENDMAP
 NAME:    nicolae_elevator_lobby_asterisk
 TAGS:    transparent decor snakedec luniq_nicolobby
 DEPTH:   D:2-, !D:$, Depths:2-, !Depths:$, Snake:2-, !Snake:$, Elf:2-, !Elf:$, \
-         Crypt:2-, !Crypt:$
+         Crypt:1-, !Crypt:$
 SHUFFLE: FJ, DE/FH
 NSUBST:  E = 1={ / 1=}
 SHUFFLE: {}/[]/()
@@ -2834,7 +2834,7 @@ ENDMAP
 NAME:    nicolae_elevator_lobby_plus
 TAGS:    transparent decor luniq_nicolobby snakdec
 DEPTH:   D:2-, !D:$, Depths:2-, !Depths:$, Snake:2-, !Snake:$, Elf:2-, !Elf:$, \
-         Crypt:2-, !Crypt:$
+         Crypt:1-, !Crypt:$
 # Chance of X sets of real stairs (not escape hatches): 1=30%, 2=60%, 3=10%
 SHUFFLE: {}/[]/()/<>/<>, PQ/pq, RS/rs, !Z/yz, PR!/QSZ, DEF
 SUBST:   pqrsyz = ., PR! : +., QSZ : nc, D = ., E = G, F = T
@@ -2994,7 +2994,7 @@ ENDMAP
 
 NAME:   nicolae_diode_basic
 TAGS:   transparent luniq_nico_xporter
-DEPTH:  D:8-, Depths, Zot
+DEPTH:  D:4-, Depths, Zot
 MARKER: D = lua:transp_loc("nico_diode_basic")
 MARKER: E = lua:transp_dest_loc("nico_diode_basic")
 MAP
@@ -3012,7 +3012,7 @@ ENDMAP
 # Can have an arrangement of 2 in/2 out, 3 in/1 out, or 1 in/3 out.
 NAME:    nicolae_diode_intersection
 TAGS:    transparent luniq_nico_xporter
-DEPTH:   D:8-, Depths, Zot
+DEPTH:   D:4-, Depths, Zot
 KMASK:   'TPQRSpqrs = opaque
 SHUFFLE: Pp/qQ/Rr/sS, Qq, Rr
 MARKER:  P = lua:transp_loc("nico_diodex_p")
@@ -3047,7 +3047,7 @@ ENDMAP
 
 NAME:    nicolae_diode_quadrants
 TAGS:    transparent luniq_nico_xporter
-DEPTH:   D:8-, Depths, Zot
+DEPTH:   D:4-, Depths, Zot
 SHUFFLE: Pp, Qq, Rr, Ss
 MARKER:  P = lua:transp_loc("nico_diodequads_p")
 MARKER:  Q = lua:transp_loc("nico_diodequads_q")
@@ -3083,7 +3083,7 @@ ENDMAP
 
 NAME:   nicolae_diode_stairs
 TAGS:   luniq_nico_xporter
-DEPTH:  D:8-, Depths, Zot
+DEPTH:  D:4-, Depths, Zot
 : if you.depth() == 1 then
 SUBST: S = )}]
 : elseif you.depth() ~= dgn.br_depth(you.branch()) then
@@ -3109,7 +3109,7 @@ ENDMAP
 
 NAME:   nicolae_transporter_circle
 TAGS:   transparent luniq_nico_xporter
-DEPTH:  D:8-, Depths, Zot
+DEPTH:  D:4-, Depths, Zot
 MARKER: P = lua:transp_loc("nico_xportcircle_p")
 MARKER: Q = lua:transp_loc("nico_xportcircle_q")
 MARKER: R = lua:transp_loc("nico_xportcircle_r")
@@ -3144,7 +3144,7 @@ ENDMAP
 # out where all the transporters go. Or maybe it won't.
 NAME:   nicolae_transporter_intersection
 TAGS:   transparent luniq_nico_xporter
-DEPTH:  D:8-, Depths, Zot
+DEPTH:  D:4-, Depths, Zot
 MARKER: P = lua:transp_loc("nico_transportx_s")
 MARKER: Q = lua:transp_loc("nico_transportx_w")
 MARKER: R = lua:transp_loc("nico_transportx_n")
@@ -3520,7 +3520,7 @@ ENDMAP
 
 NAME:    nicolae_escalator
 TAGS:    extra decor transparent
-DEPTH:   D:8-, !D:$, Depths:2-, !Depths:$
+DEPTH:   D:4-, !D:$, Depths:2-, !Depths:$
 SHUFFLE: {}/[]/()
 SUBST:   + : +++@
 MAP
@@ -3628,7 +3628,7 @@ ENDMAP
 NAME:   unseen_surprise_small
 TAGS:   serial_glass_rare allow_dup no_wall_fixup transparent no_descent
 WEIGHT: 1
-DEPTH:  D:8-, Depths, Elf, Crypt
+DEPTH:  D:4-, Depths, Elf, Crypt
 KMONS:  1 = generate_awake unseen_horror
 KITEM:  1 = elf skeleton, | / *
 KMASK:  1 = opaque
@@ -3794,7 +3794,7 @@ ENDMAP
 
 NAME:    minmay_variable_closet
 TAGS:    extra transparent
-DEPTH:   D:9-, Depths
+DEPTH:   D:4-, Depths
 ITEM:    any weapon, any missile, any armour, any scroll
 ITEM:    any jewellery, any potion, any book
 SUBST:   $ : $ZYXW
@@ -3811,7 +3811,7 @@ xxxx
 ENDMAP
 
 NAME:   library_closet
-DEPTH:  D:9-, Depths, Elf, Crypt, Snake, Orc
+DEPTH:  D:4-, Depths, Elf, Crypt, Snake, Orc
 TAGS:   extra transparent
 WEIGHT: 5
 ITEM:   any book w:20 / any scroll / nothing
@@ -3888,7 +3888,7 @@ ENDMAP
 
 NAME:   evilmike_butchery
 TAGS:   no_item_gen transparent
-DEPTH:  D:9-, Depths
+DEPTH:  D:4-, Depths
 KFEAT:  C = cache of meat
 SUBST:  . = ..", X = xxB
 KPROP:  "B = bloody
@@ -4036,7 +4036,7 @@ x.xxx.xxxxxxxxxd..xxxxx.x
 ENDMAP
 
 NAME: nicolae_straight_to_the_point
-DEPTH: D:8-, !D:$
+DEPTH: D:4-, !D:$
 TAGS: no_item_gen transparent
 KMASK: i> = opaque
 KITEM: >i = any / any good_item / star_item w:1 / $ / $ good_item w:1
@@ -4188,7 +4188,7 @@ ENDMAP
 
 NAME:   dreamdust_deal_with_the_devil
 TAGS:   extra transparent no_item_gen
-DEPTH:  D:8-, Lair, Orc, Elf
+DEPTH:  D:4-, Lair, Orc, Elf
 WEIGHT: 5
 SUBST:  ? : V Y t
 TILE:   G = dngn_statue_imp
@@ -4235,7 +4235,7 @@ ENDMAP
 
 NAME:   lemuel_flamethrower_3
 TAGS:   allow_dup ruin_abyss
-DEPTH:  D:12-, Depths, Elf, Geh, Abyss
+DEPTH:  D:6-, Depths, Elf, Geh, Abyss
 KFEAT:  F = floor
 MARKER: F = lua:fog_machine { cloud_type="flame", \
             pow_min = 20, pow_max = 40, delay = 150, \
@@ -4310,7 +4310,7 @@ ENDMAP
 # eruption. No warning needed here - the steam does very little damage.
 NAME:   lemuel_old_faithful
 TAGS:   uniq_geyser no_monster_gen transparent
-DEPTH:  D:11-, Depths, Lair, Geh
+DEPTH:  D:5-, Depths, Lair, Geh
 MARKER: s = lua:fog_machine { cloud_type="steam", \
             pow_min = 2, pow_max = 5, delay = 25, \
             size = 2, walk_dist = 3, spread_rate= 10 }
@@ -4342,7 +4342,7 @@ MAP
 ENDMAP
 
 NAME:   lemuel_another_geyser
-DEPTH:  D:11-, Depths, Lair
+DEPTH:  D:5-, Depths, Lair
 TAGS:   uniq_geyser no_monster_gen layout_rooms transparent no_descent
 MONS:   nothing,nothing
 MARKER: s = lua:fog_machine { cloud_type="steam", \
@@ -4371,7 +4371,7 @@ ENDMAP
 
 NAME:  lemuel_nasty_fountain
 TAGS:  allow_dup extra opaque
-DEPTH: D:11-, Depths, Crypt, Tar
+DEPTH: D:5-, Depths, Crypt, Tar
 KFEAT: + = closed_clear_door
 MARKER: Y = lua:fog_machine { cloud_type = "foul pestilence", \
              pow_min = 8, pow_max = 12, delay_min = 20, delay_max = 30, \
@@ -4418,7 +4418,7 @@ ENDMAP
 
 NAME:    lemuel_freeze_loot_1
 TAGS:    no_descent
-DEPTH:   D:12-, Depths, Crypt
+DEPTH:   D:6-, Depths, Crypt
 SUBST:   * : **$
 SUBST:   * = **|
 NSUBST:  N = 1:+ / *:n
@@ -4487,7 +4487,7 @@ ENDMAP
 # No item generation for the sake of autoexplore.
 NAME:   lemuel_flamethrower_hall
 TAGS:   layout_rooms layout_city no_item_gen ruin_abyss
-DEPTH:  D:9-, Depths, Elf, Geh, Abyss
+DEPTH:  D:4-, Depths, Elf, Geh, Abyss
 ITEM:   any weapon good_item ego:flaming / scroll of immolation pre_id
 ITEM:   fire dragon scales good_item / parchment disc:fire
 SUBST:  $ : $$*|.c
@@ -4704,7 +4704,7 @@ ENDMAP
 
 NAME:  minivault_21
 TAGS:  transparent extra
-DEPTH: D:8-, !D:$, Depths:2-, !Depths:$
+DEPTH: D:4-, !D:$, Depths:2-, !Depths:$
 KMASK: |'<>* = opaque
 MAP
 ............

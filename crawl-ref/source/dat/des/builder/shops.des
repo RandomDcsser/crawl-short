@@ -902,7 +902,7 @@ ENDMAP
 
 NAME:   nicolae_shop_closed_for_inventory
 TAGS:   extra shop transparent
-DEPTH:  D:8-, Depths, Snake, Shoals
+DEPTH:  D:4-, Depths, Snake, Shoals
 WEIGHT: 1
 KFEAT:  - = iron_grate
 KFEAT:  O = any shop
@@ -1079,7 +1079,7 @@ ENDMAP
 # Custom earth shop
 NAME:    guppyfry_shop_earth
 TAGS:    no_monster_gen transparent
-DEPTH:   D:11-, Depths
+DEPTH:   D:5-, Depths
 KMONS:   1 = gargoyle / basilisk / boulder beetle / cyclops w:3
 KMONS:   2 = stone giant / walking earthen tome w:4 / \
              deep troll earth mage / iron dragon w:4
@@ -1115,7 +1115,7 @@ ENDMAP
 # Custom blood shop
 NAME:    guppyfry_shop_blood
 TAGS:    no_monster_gen transparent
-DEPTH:   D:11-, Depths
+DEPTH:   D:5-, Depths
 KMONS:   1 = vampire / vampire bat
 KMONS:   2 = vampire mage / vampire knight
 KFEAT:   v = general shop type:Blood suffix:Bar count:8 ; \
@@ -1198,7 +1198,7 @@ ENDMAP
 #####################################################
 # All bardings, all the time.
 NAME: nicolae_barding_shop
-DEPTH: D:8-, Depths, Snake, !Snake:$
+DEPTH: D:4-, Depths, Snake, !Snake:$
 WEIGHT: 1
 TAGS: transparent
 : if you.in_branch("Snake") then
@@ -1222,7 +1222,7 @@ ENDMAP
 # Sells conjurations-heavy books, destructive wands, etc.
 NAME: nicolae_blasting_shop
 TAGS: no_monster_gen no_item_gen transparent extra
-DEPTH: D:8-, Depths
+DEPTH: D:4-, Depths
 MARKER: s = lua:fog_machine { cloud_type = "flame", \
              pow_min = 3, pow_max = 5, delay_min = 50, delay_max = 90, \
              start_clouds = 1, size = 3, walk_dist = 0, spread_rate= 0 }
@@ -1310,7 +1310,7 @@ ENDMAP
 # Why not take a chance on an unidentified artefact?
 NAME: nicolae_antique_artefacts
 TAGS: transparent extra
-DEPTH: D:10-, Depths
+DEPTH: D:5-, Depths
 WEIGHT: 1
 SHUFFLE: -m
 SUBST: - = .
@@ -1357,7 +1357,7 @@ ENDMAP
 # You can't eat the purple anymore. But you can drink it. Drink the purple.
 NAME:  nicolae_transmutations_shop
 TAGS:  transparent no_item_gen no_monster_gen extra
-DEPTH: D:8-, Depths, Zot
+DEPTH: D:4-, Depths, Zot
 KFEAT: S = general shop type:Changing suffix:Room count:9 ; \
            potion of mutation w:15 | potion of lignification w:15 | \
            wand of polymorph | any talisman | staff of alchemy | \
@@ -1561,9 +1561,9 @@ MAP
 S
 ENDMAP
 
-# top tier equipment for a single gold... if you're on zot:5
+# top tier equipment for a single gold... if you're on zot:3
 NAME:   hellmonk_bargain_basement
-DEPTH:  Zot:5
+DEPTH:  Zot:3
 WEIGHT: 3
 KFEAT:  S = general shop type:Last-Chance suffix:Deals greed:0 count:7 ; \
  any ring randart w:15 | any amulet randart w:15 | quick blade randart | \
@@ -1702,7 +1702,7 @@ ENDMAP
 NAME:   hellmonk_scale_shop
 TAGS:   transparent
 WEIGHT: 3
-DEPTH:  D:8-, Snake, Depths
+DEPTH:  D:4-, Snake, Depths
 KFEAT:  D = armour shop type:Superior suffix:Scales count:3 ; \
         scale mail randart
 : if you.in_branch("Depths") then
@@ -1752,7 +1752,7 @@ ENDMAP
 NAME:   monkooky_shop_alliterative
 TAGS:   transparent
 WEIGHT: 3
-DEPTH:  D:8-, Orc, Elf, Depths
+DEPTH:  D:4-, Orc, Elf, Depths
 {{
 local count = crawl.roll_dice(2, 3) + 5
 local name = "A" ..
@@ -2092,7 +2092,7 @@ ENDMAP
 NAME:   tekkud_shop_of_orbs
 TAGS:   no_monster_gen no_item_gen no_trap_gen patrolling
 TAGS:   vaults_hard vaults_orient_s
-DEPTH:  D:13-, Snake:2-, Elf:2-, Vaults, Crypt, Depths, Zot, !Zot:$
+DEPTH:  D:6-, Snake:2-, Elf:2-, Vaults, Crypt, Depths, Zot, !Zot:$
 WEIGHT: 1 (Zot, Crypt), 3
 {{
 local shopname = util.random_from({"type:Orb suffix:Outfitters",

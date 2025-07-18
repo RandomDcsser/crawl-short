@@ -18,7 +18,7 @@
 : AUTO_START = false
 # experimental: do second lair rune branch before depths
 : EARLY_SECOND_RUNE = true
-# experimental: wait to do Orc until after D:15
+# experimental: wait to do Orc until after D:7
 : LATE_ORC = true
 # lair rune preferences, current options are:
 # * random - no preference, chooses randomly
@@ -4976,9 +4976,9 @@ function brand_is_great(brand)
   elseif brand == "vampirism" then
     return (you.race() == "Deep Dwarf" or not you.have_orb())
   elseif brand == "electrocution" then
-    return (where ~= "Zot:5")
+    return (where ~= "Zot:3")
   elseif brand == "holy wrath" then
-    return (where == "Zot:5" or you.have_orb() or PAN_RUNE or HELL_RUNE or GOLDEN_RUNE)
+    return (where == "Zot:3" or you.have_orb() or PAN_RUNE or HELL_RUNE or GOLDEN_RUNE)
   else
     return false
   end
@@ -5697,11 +5697,11 @@ function plan_simple_go_down()
   if travel_destination or unshafting() then
     return false
   end
-  if (found_branch("L") and ready_for_lair() or where == "D:11") and not
+  if (found_branch("L") and ready_for_lair() or where == "D:5") and not
      util.contains(c_persist.branches_entered, "L") then
     return false
   end
-  if where == "Vaults:4" and easy_runes() < 2 then
+  if where == "Vaults:2" and easy_runes() < 2 then
     return false
   end
   if where == "Tomb:1" or where == "Tomb:2" or where == "Tomb:3" then
@@ -5862,7 +5862,7 @@ function plan_dive_go_to_pan_downstairs()
 end
 
 function plan_open_runed_doors()
-  if where ~= "Pan" and (where ~= "Depths:3" or not PAN_RUNE) then
+  if where ~= "Pan" and (where ~= "Depths:2" or not PAN_RUNE) then
     return false
   end
   for x = -1,1 do
@@ -5894,10 +5894,10 @@ end
 
 function plan_dive()
   if (in_branch("M") and where ~= "Slime:5" or game_status == "hells" and
-      (in_branch("I") and where ~= "Dis:7"
-       or in_branch("G") and where ~= "Geh:7"
-       or in_branch("X") and where ~= "Coc:7"
-       or in_branch("Y") and where ~= "Tar:7"))
+      (in_branch("I") and where ~= "Dis:3"
+       or in_branch("G") and where ~= "Geh:3"
+       or in_branch("X") and where ~= "Coc:3"
+       or in_branch("Y") and where ~= "Tar:3"))
      and not travel_destination then
     expect_new_location = true
     magic("G>")
@@ -5908,10 +5908,10 @@ end
 
 function plan_early_new_travel()
   if game_status == "hells" and
-     (where == "Dis:7" and you.have_rune("iron")
-      or where == "Geh:7" and you.have_rune("obsidian")
-      or where == "Coc:7" and you.have_rune("icy")
-      or where == "Tar:7" and you.have_rune("bone"))
+     (where == "Dis:3" and you.have_rune("iron")
+      or where == "Geh:3" and you.have_rune("obsidian")
+      or where == "Coc:3" and you.have_rune("icy")
+      or where == "Tar:3" and you.have_rune("bone"))
      and not travel_destination then
     travel_destination = "H"
     return plan_continue_travel()
@@ -6072,7 +6072,7 @@ end
 function plan_step_towards_lair()
   local x, y, feat
   if (stepped_on_lair or not found_branch("L"))
-     and (where ~= "Crypt:3" or stepped_on_tomb or not found_branch("W")) then
+     and (where ~= "Crypt:1" or stepped_on_tomb or not found_branch("W")) then
     return false
   end
   for x = -LOS,LOS do
@@ -6081,7 +6081,7 @@ function plan_step_towards_lair()
       if (feat == "enter_lair" or feat == "enter_tomb")
          and you.see_cell_no_trans(x,y) then
         if x == 0 and y == 0 then
-          if where == "Crypt:3" then
+          if where == "Crypt:1" then
             stepped_on_tomb = true
           else
             stepped_on_lair = true
@@ -6165,14 +6165,14 @@ function plan_new_travel()
   if cloudy then
     return false
   end
-  local back_to_D_places = { "Temple", "Orc:2", "Vaults:4"}
+  local back_to_D_places = { "Temple", "Orc:2", "Vaults:2"}
   if util.contains(back_to_D_places, where) then
     travel_destination = "D"
   end
-  if where == "D:11" and not util.contains(c_persist.branches_entered, "L") then
+  if where == "D:5" and not util.contains(c_persist.branches_entered, "L") then
     travel_destination = "L"
   end
-  if where == "Lair:5" then
+  if where == "Lair:3" then
     if travel.find_deepest_explored("D") == 15 and easy_runes() < 2 then
       travel_destination = choose_lair_rune_branch()
     elseif game_status == "slime" then
@@ -6181,19 +6181,19 @@ function plan_new_travel()
       travel_destination = "D"
     end
   end
-  if where == "Snake:4" and you.have_rune("serpentine") then
+  if where == "Snake:2" and you.have_rune("serpentine") then
     travel_destination = "D"
   end
-  if where == "Swamp:4" and you.have_rune("decaying") then
+  if where == "Swamp:2" and you.have_rune("decaying") then
     travel_destination = "D"
   end
-  if where == "Spider:4" and you.have_rune("gossamer") then
+  if where == "Spider:2" and you.have_rune("gossamer") then
     travel_destination = "D"
   end
-  if where == "Shoals:4" and you.have_rune("barnacled") then
+  if where == "Shoals:2" and you.have_rune("barnacled") then
     travel_destination = "D"
   end
-  if where == "Vaults:5" and you.have_rune("silver") then
+  if where == "Vaults:3" and you.have_rune("silver") then
     if game_status == "tomb" then
       travel_destination = "C"
     else
@@ -6203,7 +6203,7 @@ function plan_new_travel()
   if where == "Slime:5" and you.have_rune("slimy") then
     travel_destination = "D"
   end
-  if where == "D:15" then
+  if where == "D:7" then
     if easy_runes() == 1 and not util.contains(c_persist.branches_entered, "V")
        or easy_runes() == 2 and util.contains(c_persist.branches_entered, "U") and not you.have_rune("silver") then
       travel_destination = "V"
@@ -6224,7 +6224,7 @@ function plan_new_travel()
       travel_destination = "L"
     end
   end
-  if where == "Depths:4" then
+  if where == "Depths:2" then
     if game_status == "zot" then
       travel_destination = "Z"
     elseif game_status == "hells" then
@@ -6246,7 +6246,7 @@ function plan_new_travel()
     travel_destination = choose_hell_rune_branch()
   end
   -- travel back from hell ends is handled in plan_early_new_travel()
-  if where == "Crypt:3" then
+  if where == "Crypt:1" then
     if game_status == "tomb" then
       travel_destination = "W"
     else
@@ -6888,7 +6888,7 @@ function plan_stuck_clear_exclusions()
 end
 
 function plan_swamp_clear_exclusions()
-  if where ~= "Swamp:4" then
+  if where ~= "Swamp:2" then
     return false
   end
   magic("X" .. control('e'))
@@ -6896,7 +6896,7 @@ function plan_swamp_clear_exclusions()
 end
 
 function plan_swamp_go_to_rune()
-  if where ~= "Swamp:4" or you.have_rune("decaying") then
+  if where ~= "Swamp:2" or you.have_rune("decaying") then
     return false
   end
   if last_swamp_fail_count == c_persist.plan_fail_count.try_swamp_go_to_rune then
@@ -6908,7 +6908,7 @@ function plan_swamp_go_to_rune()
 end
 
 function plan_swamp_clouds_hack()
-  if where ~= "Swamp:4" then
+  if where ~= "Swamp:2" then
     return false
   end
   if you.have_rune("decaying") and can_teleport() and teleport() then
@@ -6957,7 +6957,7 @@ function plan_swamp_clouds_hack()
       if (view.cloud_at(x,y) == "freezing vapour"
           or view.cloud_at(x,y) == "foul pestilence")
          and you.see_cell_no_trans(x,y) then
-        return random_step("Swamp:4")
+        return random_step("Swamp:2")
       end
     end
   end
@@ -6969,12 +6969,12 @@ function plan_dig_grate()
   local grate_count_needed = 3
   if where:find("Zot") then
     grate_mon_list = {"draconian stormcaller", "draconian scorcher"}
-  elseif where == "Depths:4" then
+  elseif where == "Depths:2" then
     grate_mon_list = {"draconian stormcaller", "draconian scorcher",
                       "angel", "daeva", "lich", "eye"}
   elseif where:find("Depths") then
     grate_mon_list = {"angel", "daeva", "lich", "eye"}
-  elseif where == "Pan" or where == "Geh:7" then
+  elseif where == "Pan" or where == "Geh:3" then
     grate_mon_list = {"smoke demon"}
     grate_count_needed = 1
   elseif where:find("Zig") then
@@ -7048,7 +7048,7 @@ end
 function plan_stuck_forget_map()
   if not cloudy and not danger
      and (where == "Slime:5" and not you.have_rune("slimy")
-     or where == "Geh:7" and not you.have_rune("obsidian")) then
+     or where == "Geh:3" and not you.have_rune("obsidian")) then
     magic("X" .. control('f'))
     return true
   end
@@ -8194,7 +8194,7 @@ function update_stuff()
       say("Entered " .. where .. ".")
     end
     c_persist.portals_found = { }
-    if where == "Vaults:5" and not v5_entry_turn then
+    if where == "Vaults:3" and not v5_entry_turn then
       v5_entry_turn = you.turns()
     end
   end

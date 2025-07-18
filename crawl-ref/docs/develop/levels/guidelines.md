@@ -182,8 +182,8 @@ The current range of levels that ghost subvault tags correspond to:
 
 ```
 "pre_temple_d":  D:5-7
-"pre_lair_d":    D:8-11
-"post_lair_d":   D:12-15
+"pre_lair_d":    D:4-11
+"post_lair_d":   D:6-15
 "lair":          Lair:1-5
 "orc":           Orc:1-2
 "snake":         Snake:1-3

@@ -394,17 +394,17 @@ MAP
 ENDMAP
 
 NAME:   special_room_orc
-DEPTH:  D:8-, Orc, !Orc:$, Elf, Vaults
+DEPTH:  D:4-, Orc, !Orc:$, Elf, Vaults
 TAGS:   special_room allow_dup unrand
-WEIGHT: 59 (D:8-12, Orc), 40 (D:13-, Elf:1), 32
+WEIGHT: 59 (D:4-12, Orc), 40 (D:6-, Elf:1), 32
 : sroom_orc_lair(_G)
 MAP
 ENDMAP
 
 NAME:   special_room_bee
-DEPTH:  D:9-, Lair, Orc, !Orc:$, Spider
+DEPTH:  D:4-, Lair, Orc, !Orc:$, Spider
 TAGS:   special_room unrand uniq_beehive
-WEIGHT: 30 (D:9-12, Orc, Lair:1-3), 24 (D:13-, Lair:4-), 20
+WEIGHT: 30 (D:4-12, Orc, Lair:1-2), 24 (D:6-, Lair:3-), 20
 : sroom_beehive(_G)
 MAP
 ENDMAP
@@ -426,9 +426,9 @@ MAP
 ENDMAP
 
 NAME:   special_room_mythical_zoo
-DEPTH:  D:14-, Depths, Lair:3-, Elf
+DEPTH:  D:7-, Depths, Lair:2-, Elf
 TAGS:   special_room allow_dup unrand
-WEIGHT: 20 (D:14-, Lair:3-4), 25 (Depths:1-2, Lair:$, Elf), 28
+WEIGHT: 20 (D:7-, Lair:2-3), 25 (Depths:1-2, Lair:$, Elf), 28
 : sroom_mythical_zoo(_G)
 MAP
 ENDMAP

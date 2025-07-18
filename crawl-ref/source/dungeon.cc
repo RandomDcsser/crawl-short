@@ -5208,7 +5208,7 @@ monster* dgn_place_monster(mons_spec &mspec, coord_def where,
                 // a guaranteed "boss" for vaultsmiths to use. In dungeon it
                 // ramps up slowly from 2*depth in the range D:1-8 (becoming
                 // deeper than a moderate OOD a from D:6-) to the full meaning
-                // at D:12.
+                // at D:6.
                 int plus = 4;
                 if (mspec.place.branch == BRANCH_DUNGEON)
                     plus = max(0, min(mspec.place.depth - 8, 4));

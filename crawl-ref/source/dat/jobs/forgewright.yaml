@@ -12,6 +12,7 @@ spells:
   - SPELL_CLOCKWORK_BEE
   - SPELL_FORGE_BLAZEHEART_GOLEM
   - SPELL_FORGE_LIGHTNING_SPIRE
+  - SPELL_WALKING_ALEMBIC
 equipment:
   - "mace tile:wpn_hammer wtile:hammer itemname:hammer"
   - "robe"

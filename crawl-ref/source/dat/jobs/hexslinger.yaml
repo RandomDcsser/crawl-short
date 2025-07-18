@@ -12,6 +12,7 @@ spells:
   - SPELL_INNER_FLAME
   - SPELL_CAUSE_FEAR
   - SPELL_DIMENSIONAL_BULLSEYE
+  - SPELL_GELLS_GAVOTTE
 equipment:
   - "robe"
   - "scroll of poison"

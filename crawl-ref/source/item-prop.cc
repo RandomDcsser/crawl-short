@@ -2407,7 +2407,7 @@ static map<scroll_type, item_rarity_type> _scroll_rarity = {
     { SCR_SILENCE,        RARITY_RARE },
     { SCR_BRAND_WEAPON,   RARITY_RARE },
     { SCR_TORMENT,        RARITY_RARE },
-    { SCR_ACQUIREMENT,    RARITY_VERY_RARE },
+    { SCR_ACQUIREMENT,    RARITY_COMMON },
 };
 
 item_rarity_type consumable_rarity(const item_def &item)

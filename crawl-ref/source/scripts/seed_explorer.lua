@@ -36,13 +36,13 @@ Usage: seed_explorer.lua -seed <seed> ([<seed> ...]|[-count <n>]) ([-depth <dept
               will count up; if it is 'random' it will choose n random seeds.
               Note that this converts seed values to doubles in lua, so limits
               the range of possible values to some degree.
-    <depth>:  A level or branch name in short form, e.g. `Zot:5`, `Hell`, or
+    <depth>:  A level or branch name in short form, e.g. `Zot:3`, `Hell`, or
               `D`, a number, or 'all'. If this is a number, then this value is
               depth relative to the level generation order. Defaults to Tomb:3,
               i.e. excluding the hells.
     <lvl>:    same format as <depth>, but will only show levels in the list.
               Note that this doesn't affect which levels are generated, so
-              `-show Zot:5` will take as long to run as `-depth Zot:5`.
+              `-show Zot:3` will take as long to run as `-depth Zot:3`.
     <cat>:    a seed explorer category, drawn from:
                {]=] ..
         table.concat(explorer.available_categories, ", ") .. [[}
@@ -161,7 +161,7 @@ if args["-show"] ~= nil then
             -- portals only.
             -- TODO: this is a heuristic; but no portals currently generate
             -- later than this. (In fact, elf:2 is really the latest.)
-            max_depth = explorer.level_to_gendepth("Zot:4")
+            max_depth = explorer.level_to_gendepth("Zot:2")
         end
     end
     local levels_set = util.set(levels_to_show)

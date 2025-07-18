@@ -12,6 +12,7 @@ spells:
   - SPELL_STONE_ARROW
   - SPELL_PETRIFY
   - SPELL_BOULDER
+  - SPELL_BOMBARD
 equipment:
   - "robe"
   - "potion of magic"

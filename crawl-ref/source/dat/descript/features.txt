@@ -1147,7 +1147,7 @@ A bloodied mop and bucket
 
 A mop and bucket soaked with the bloody aftermath of demonic torture.
 %%%%
-# Dis:7
+# Dis:3
 An iron statue
 
 A statue of an ancient warrior, festooned with trophies from fallen victims.
@@ -1159,7 +1159,7 @@ An infernal standard
 A blazing flag of cruel conquest, planted amid the ruins of many a fallen
 kingdom to claim their ashes in the name of Hell.
 %%%%
-# Geh:7
+# Geh:3
 Ashen ground
 
 Ash and embers, littered with broken treasures and worthless coins from realms
@@ -1171,7 +1171,7 @@ Walls of brass and nickel, covered in a thin golden foil steadily peeling away
 in the constant, oppressive heat. Designs depict mortals dealing with devils,
 but the former rarely seem to come out ahead on the exchange.
 %%%%
-# Coc:7
+# Coc:3
 An ice-covered rock wall
 
 A rock wall coated in a thick layer of ice. Twisted faces glower beneath the

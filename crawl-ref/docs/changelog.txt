@@ -227,7 +227,7 @@ Tiles
   * Spells: Confusion Gaze, Vitrifying Gaze, Weakening Gaze.
   * Icons: frenzied, magnetized, sentinel's mark.
   * Traps: Archmage's trap, devourer's trap, tyrant's trap.
-  * Walls: Zot:5 stone walls.
+  * Walls: Zot:3 stone walls.
 
 Stone Soup 0.33.1 (20250606)
 ----------------------------
@@ -321,7 +321,7 @@ Branches, Environment
 * The last floor of Crypt now has a 30% chance to contain a sanguine talisman.
 * The clouds of degeneration in Alistair's Party Mansion are now alcoholic mist,
   inflicting Vertigo.
-* The orb chamber on Zot:5 no longer has a chance to be completely blocked off
+* The orb chamber on Zot:3 no longer has a chance to be completely blocked off
   by traps, and instead will deploy several of the above newer traps.
 * Frail pillars of rime can be found in Cocytus.
 * Ziggurats have even more exponential scaling for those doing multiple
@@ -3338,7 +3338,7 @@ Branches, Environment
   - Net traps now try to net the player whenever they are triggered in LOS.
   - New trap: dispersal trap. When triggered, every actor in sight of the trap
     is blinked.
-  - Trap placement in Ossuaries, Zot:5, and Tomb has been overhauled. In Zot:5
+  - Trap placement in Ossuaries, Zot:3, and Tomb has been overhauled. In Zot:3
     and Tomb, all mechanical traps save for net traps have been removed.
   - Grate traps (triggered by pressure plates) have been removed.
 * New Gauntlet portal to replace Labyrinths:
@@ -3589,7 +3589,7 @@ Monsters
 * Harold has better melee damage and armour, and he places earlier. His Bolt
   of Fire and Blink spells are replaced with Harpoon Shot and Sentinel's Mark.
 * Jorgrun has Iron Shot instead of Shatter and places earlier.
-* Ilsuiw spawns on Shoals:2-4 instead of nearly always spawning on Shoals:4.
+* Ilsuiw spawns on Shoals:2-4 instead of nearly always spawning on Shoals:2.
 * Engulf status from Water Elementals now blocks god abilities but no longer
   slows movement.
 * The Barb status from manticore barbs now counts any non-movement actions
@@ -5526,7 +5526,7 @@ Branches, environment
 * The main Dungeon is now fifteen levels.
 * A new branch: the Depths; entered from the end of Dungeon, it is five levels
   long and contains the entrance to the Realm of Zot.
-* The Vaults are now entered from D:13-14 and need a rune to enter.
+* The Vaults are now entered from D:6-14 and need a rune to enter.
 * Abyssal stairs appear more frequently, and are fixed with depth.
 * Ziggurats require only three runes to enter; an entrance is guaranteed
   in Depths, but still spawn as normal in Pan.
@@ -7736,7 +7736,7 @@ Levels
 * Introduce serial vaults consisting of several themed mini vaults.
 * Every random Pan vault now has a 1/9 chance of having a demonic rune in it.
 * No banishment from hell effects.
-* No more darkgrey walls/floors in Geh:7 or Gloorx.
+* No more darkgrey walls/floors in Geh:3 or Gloorx.
 * Ambient noise levels for dungeon branches (affecting stealth).
 * Describe level 1 upstairs as "staircase leading out of the dungeon."
 * Don't enable cTele by quaffing Elf fountains.
@@ -7753,7 +7753,7 @@ Levels
 * Don't open transparent secret doors with warnings.
 * New noise propagation system, taking into account walls and doors.
 * Fix good_item gold giving ludicrous amounts.
-* Fix no traps being generated on Zot:5.
+* Fix no traps being generated on Zot:3.
 * Reveal teletraps triggered by a monster in sight.
 * Replace hell exit stairs with portals.
 * Boost alarm trap noise to 25.

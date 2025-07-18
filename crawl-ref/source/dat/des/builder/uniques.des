@@ -97,12 +97,12 @@ ENDMAP
 ################################################################################
 
 NAME:   uniq_amaemon
-DEPTH:  D:8-11, Lair:1-3
+DEPTH:  D:4-11, Lair:1-2
 WEIGHT: 5, 15(Lair)
 : place_unique(_G, "Amaemon band")
 
 NAME:   uniq_azrael
-DEPTH:  D:12-, Orc:$, Elf, !Elf:$, Snake, !Snake:$, Spider, !Spider:$
+DEPTH:  D:6-, Orc:$, Elf, !Elf:$, Snake, !Snake:$, Spider, !Spider:$
 : place_unique(_G, "Azrael band")
 
 NAME:   uniq_blorkula_the_orcula
@@ -120,11 +120,11 @@ DEPTH:  D:4-6
 : place_unique(_G, "Edmund")
 
 NAME:   uniq_erica
-DEPTH:  D:8-11, Orc:1, Lair:1-2
+DEPTH:  D:4-11, Orc:1, Lair:1-2
 : place_unique(_G, "Erica")
 
 NAME:   uniq_erolcha
-DEPTH:  D:9-13, Orc
+DEPTH:  D:4-13, Orc
 : place_unique(_G, "Erolcha")
 
 NAME:   uniq_eustachio
@@ -132,20 +132,20 @@ DEPTH:  D:4-6
 : place_unique(_G, "Eustachio")
 
 NAME:   uniq_frances
-DEPTH:  D:12-14, Elf:1, Swamp:1-2, Snake:1-2, Shoals:1-2, Spider:1-2
+DEPTH:  D:6-14, Elf:1, Swamp:1-2, Snake:1-2, Shoals:1-2, Spider:1-2
 : place_unique(_G, "Frances")
 
 NAME:   uniq_fannar
-DEPTH:  D:10-12, Orc:1, Lair:1-3
+DEPTH:  D:5-12, Orc:1, Lair:1-2
 : place_unique(_G, "Fannar")
 
 NAME:   uniq_gastronok
-DEPTH:  D:8-12, Orc:1, Lair:1-3
+DEPTH:  D:4-12, Orc:1, Lair:1-2
 WEIGHT: 5, 15(Lair)
 : place_unique(_G, "Gastronok")
 
 NAME:   uniq_grum
-DEPTH:  D:8-11, Lair:1
+DEPTH:  D:4-11, Lair:1
 : place_unique(_G, "Grum band")
 
 NAME:   uniq_grinder
@@ -153,7 +153,7 @@ DEPTH:  D:3-6
 : place_unique(_G, "Grinder")
 
 NAME:   uniq_harold
-DEPTH:  D:9-11, Orc:1, Lair:1-2
+DEPTH:  D:4-11, Orc:1, Lair:1-2
 : place_unique(_G, "Harold")
 
 NAME:   uniq_ijyb
@@ -165,7 +165,7 @@ DEPTH:  D:2-3
 : place_unique(_G, "Jessica")
 
 NAME:   uniq_jorgrun
-DEPTH:  D:12-, Orc, Elf, !Elf:$, Snake, !Snake:$, Shoals, !Shoals:$
+DEPTH:  D:6-, Orc, Elf, !Elf:$, Snake, !Snake:$, Shoals, !Shoals:$
 DEPTH:  Spider, !Spider:$, Swamp, !Swamp:$
 : place_unique(_G, "Jorgrun")
 
@@ -174,19 +174,19 @@ DEPTH:  D:7-10, Lair:1
 : place_unique(_G, "Joseph")
 
 NAME:   uniq_josephine
-DEPTH:  D:10-, Orc, Lair:3-
+DEPTH:  D:5-, Orc, Lair:2-
 : place_unique(_G, "Josephine band")
 
 NAME:   uniq_kirke
-DEPTH:  D:12-, Lair:3-, Elf:1, Swamp:1, Snake:1, Shoals:1, Spider:1
+DEPTH:  D:6-, Lair:2-, Elf:1, Swamp:1, Snake:1, Shoals:1, Spider:1
 : place_unique(_G, "Kirke band")
 
 NAME:   uniq_lodul
-DEPTH:  D:10-14
+DEPTH:  D:5-14
 : place_unique(_G, "Lodul band")
 
 NAME:   uniq_louise
-DEPTH:  D:14-, Elf, Swamp, Snake, Shoals, Spider
+DEPTH:  D:7-, Elf, Swamp, Snake, Shoals, Spider
 : place_unique(_G, "Louise")
 
 NAME:   uniq_maggie
@@ -210,11 +210,11 @@ DEPTH:  D:2-4
 : place_unique(_G, "Natasha")
 
 NAME:   uniq_nergalle
-DEPTH:  D:10-12, Orc, !Orc:$, Lair:1-3
+DEPTH:  D:5-12, Orc, !Orc:$, Lair:1-2
 : place_unique(_G, "Nergalle")
 
 NAME:   uniq_nessos
-DEPTH:  D:12-, Orc:$, Lair:3-
+DEPTH:  D:6-, Orc:$, Lair:2-
 : place_unique(_G, "Nessos")
 
 NAME:   uniq_pikel
@@ -234,7 +234,7 @@ WEIGHT: 3
 : place_unique(_G, "Prince Ribbit band")
 
 NAME:   uniq_psyche
-DEPTH:  D:8-12
+DEPTH:  D:4-12
 : place_unique(_G, "Psyche")
 
 NAME:   uniq_pargi
@@ -248,7 +248,7 @@ DEPTH:  D:2-4
 
 NAME:   uniq_roxanne
 TAGS:   place_unique transparent
-DEPTH:  D:14-, Elf, Swamp, Snake, Shoals, Spider
+DEPTH:  D:7-, Elf, Swamp, Snake, Shoals, Spider
 MONS:   Roxanne
 MAP
 ...
@@ -257,7 +257,7 @@ MAP
 ENDMAP
 
 NAME:   uniq_rupert
-DEPTH:  D:12-, Lair:3-, Orc:$, Snake:1, Spider:1
+DEPTH:  D:6-, Lair:3-, Orc:$, Snake:1, Spider:1
 : place_unique(_G, "Rupert")
 
 NAME:   uniq_sigmund
@@ -265,11 +265,11 @@ DEPTH:  D:2-6
 : place_unique(_G, "Sigmund")
 
 NAME:   uniq_snorg
-DEPTH:  D:10-14, Lair:3-, Orc
+DEPTH:  D:5-14, Lair:3-, Orc
 : place_unique(_G, "Snorg")
 
 NAME:   uniq_sonja
-DEPTH:  D:10-13, Orc, Lair
+DEPTH:  D:5-13, Orc, Lair
 : place_unique(_G, "Sonja")
 
 NAME:   uniq_sprozz
@@ -281,11 +281,11 @@ DEPTH:  D:2-3
 : place_unique(_G, "Terence")
 
 NAME:   uniq_urug
-DEPTH:  D:10-13, Orc, Lair
+DEPTH:  D:5-13, Orc, Lair
 : place_unique(_G, "Urug")
 
 NAME:   uniq_agnes
-DEPTH:  D:14-, Elf, !Elf:$, Snake, Spider
+DEPTH:  D:7-, Elf, !Elf:$, Snake, Spider
 : place_unique(_G, "Agnes")
 
 ################################################################################
@@ -293,7 +293,7 @@ DEPTH:  D:14-, Elf, !Elf:$, Snake, Spider
 ################################################################################
 
 NAME:   uniq_arachne
-DEPTH:  Vaults:1-4, Elf, Depths:1
+DEPTH:  Vaults:1-3, Elf, Depths:1
 veto {{
   if crawl.game_started() and dgn.br_exists("Spider") then
     return true
@@ -303,11 +303,11 @@ veto {{
 : place_unique(_G, "Arachne band")
 
 NAME:   uniq_asterion
-DEPTH:  Depths:1-2, Elf, Snake, Spider, Vaults:1-3
+DEPTH:  Depths:1-2, Elf, Snake, Spider, Vaults:1-2
 : place_unique(_G, "Asterion")
 
 NAME:   uniq_bai_suzhen
-DEPTH:  Depths:1-2, Elf:$, Swamp:3-, Snake:3-, Shoals:3-, Spider:3-, Vaults:2-
+DEPTH:  Depths:1-2, Elf:$, Swamp:2-, Snake:2-, Shoals:2-, Spider:2-, Vaults:2-
 : place_unique(_G, "Bai Suzhen")
 
 # Initial placement of Boris: he may regenerate on later levels after
@@ -322,33 +322,33 @@ MONS:   the Enchantress band
 : place_unique(_G, "the Enchantress band")
 
 NAME:   uniq_frederick
-DEPTH:  Depths:3-, Vaults:2-, Crypt
+DEPTH:  Depths:2-, Vaults:2-, Crypt
 : place_unique(_G, "Frederick")
 
 NAME:   uniq_jory
-DEPTH:  Depths:3-, Vaults:2-, Crypt
+DEPTH:  Depths:2-, Vaults:2-, Crypt
 : place_unique(_G, "Jory")
 
 NAME:   uniq_josephina
 # Higher weight to compensate for Josephine.
 WEIGHT: 15
-DEPTH:  Depths:2-, Zot:1-4, Crypt
+DEPTH:  Depths:2-, Zot:1-3, Crypt
 : place_unique(_G, "Josephina band")
 
 NAME:   uniq_margery
 # Higher WEIGHT to compensate for Maggie. Used objstat to calculate doubling
 # the WEIGHT would lead to numbers closest to Margery's pre-Maggie spawn rates
 WEIGHT: 20
-DEPTH:  Depths:3-, Vaults:2-, Crypt
+DEPTH:  Depths:2-, Vaults:2-, Crypt
 : place_unique(_G, "Margery band")
 
 NAME:   uniq_mara
-DEPTH:  Depths, !Depths:$, Elf:$, Swamp:3-, Snake:3-, Shoals:3-, Spider:3-
+DEPTH:  Depths, !Depths:$, Elf:$, Swamp:2-, Snake:2-, Shoals:2-, Spider:2-
 DEPTH:  Vaults:2-
 : place_unique(_G, "Mara")
 
 NAME:   uniq_mennas
-DEPTH:  Depths:3-, Vaults:2-, Crypt, Tomb
+DEPTH:  Depths:2-, Vaults:2-, Crypt, Tomb
 : place_unique(_G, "Mennas")
 
 NAME:   uniq_mennas_pan
@@ -364,11 +364,11 @@ MAP
 ENDMAP
 
 NAME:   uniq_nikola
-DEPTH:  Depths:1-2, Elf, Swamp, Snake, Shoals, Spider, Vaults:1-3
+DEPTH:  Depths:1-2, Elf, Swamp, Snake, Shoals, Spider, Vaults:1-2
 : place_unique(_G, "Nikola")
 
 NAME:   uniq_parghit
-DEPTH:  Depths:3-, Zot:1-4
+DEPTH:  Depths:2-, Zot:1-3
 : place_unique(_G, "Parghit")
 
 NAME:   uniq_norris
@@ -384,15 +384,15 @@ DEPTH:  Depths, Vaults:2-, Crypt
 : place_unique(_G, "Sojobo band")
 
 NAME:   uniq_vv
-DEPTH:  Depths:2-, Zot:1-4, Crypt
+DEPTH:  Depths:2-, Zot:1-3, Crypt
 : place_unique(_G, "Vv")
 
 NAME:   uniq_xtahua
-DEPTH:  Depths:3-, Vaults:2-, Crypt, !Crypt:$
+DEPTH:  Depths:2-, Vaults:2-, Crypt, !Crypt:$
 : place_unique(_G, "Xtahua")
 
 NAME:   uniq_grunn
-DEPTH:  Depths:2-, Zot:1-4, Crypt
+DEPTH:  Depths:2-, Zot:1-3, Crypt
 : place_unique(_G, "Grunn band")
 
 NAME:   uniq_nameless_revenant
@@ -418,7 +418,7 @@ DEPTH:  Swamp, Snake, Shoals, Spider
 : place_unique(_G, "Mlioglotl")
 
 NAME:   uniq_wiglaf
-DEPTH:  Elf, Snake, Spider, Vaults:1-3
+DEPTH:  Elf, Snake, Spider, Vaults:1-2
 : place_unique(_G, "Wiglaf")
 
 NAME:   uniq_vashnia
@@ -457,7 +457,7 @@ DEPTH:  Zot
 : place_unique(_G, "Tiamat band")
 
 NAME:   uniq_zenata
-DEPTH:  Vaults:1-4, Elf, Crypt
+DEPTH:  Vaults:1-3, Elf, Crypt
 : place_unique(_G, "Zenata")
 
 NAME:   uniq_cerebov

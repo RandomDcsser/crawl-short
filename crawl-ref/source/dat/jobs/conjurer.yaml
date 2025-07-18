@@ -11,6 +11,7 @@ spells:
   - SPELL_SEARING_RAY
   - SPELL_FULMINANT_PRISM
   - SPELL_ISKENDERUNS_MYSTIC_BLAST
+  - SPELL_STARBURST
 equipment:
   - "robe"
   - "potion of magic"

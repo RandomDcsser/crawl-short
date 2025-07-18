@@ -3577,7 +3577,7 @@ unsigned int exp_needed(int lev, int exp_apt)
     if (exp_apt == -99)
         exp_apt = species::get_exp_modifier(you.species);
 
-    return (unsigned int) ((level - 1) * apt_to_factor(exp_apt - 1));
+    return (unsigned int) ((level - 1) * apt_to_factor(exp_apt + 2));
 }
 
 // returns bonuses from rings of slaying, etc.
@@ -3979,15 +3979,14 @@ int get_real_hp(bool trans, bool drained)
 {
     int hitp;
 
-    hitp  = you.experience_level * 11 / 2 + 8;
+    hitp  = you.experience_level * 7 + 8;
     hitp += you.hp_max_adj_perm;
     // Important: we shouldn't add Heroism boosts here.
     // ^ The above is a 2011 comment from 1kb, in 2021 this isn't
     // archaeologied for further explanation, but the below now adds Ash boosts
     // to fighting to the HP calculation while preventing it for Heroism
     // - eb
-    hitp += you.experience_level * you.skill(SK_FIGHTING, 5, false, false) / 70
-          + (you.skill(SK_FIGHTING, 3, false, false) + 1) / 2;
+    hitp += (you.skill(SK_FIGHTING, 6, false, false) + 1);
 
     // Racial modifier.
     hitp *= 10 + species::get_hp_modifier(you.species);
@@ -6872,7 +6871,7 @@ int player_willpower(bool temp)
     if (you.unrand_equipped(UNRAND_FOLLY))
         return 0;
 
-    int rm = you.experience_level * species::get_wl_modifier(you.species);
+    int rm = you.experience_level * (species::get_wl_modifier(you.species) + 2);
 
     // randarts
     rm += WL_PIP * you.scan_artefacts(ARTP_WILLPOWER);

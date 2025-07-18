@@ -45,7 +45,7 @@ Additionally, you can specify the monsters by a place in the dungeon, in
 which case a random monster appropriate for that place will be chosen.
 For example:
 
-    crawl -arena "2 place:Lair:7 v 3 place:Vaults:4"
+    crawl -arena "2 place:Lair:7 v 3 place:Vaults:2"
 
 will choose two random monsters from the 7th level of the Lair and pit them
 against three random monsters from the 4th level of the Vaults.
@@ -134,7 +134,7 @@ The parameters include:
       which are forbidden from the arena by default.
 
 * "arena_place:place" sets the place used when determining which monsters the
-      spell Shadow Creatures uses. So "arena:Lair:5" would make it
+      spell Shadow Creatures uses. So "arena:Lair:3" would make it
       summon the types of monsters you'd find on the 5th lair of the Lair.
       It also controls what type of monster "random" places, assuming
       that "random_uniques" isn't used.

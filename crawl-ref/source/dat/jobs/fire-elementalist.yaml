@@ -12,6 +12,7 @@ spells:
   - SPELL_BLASTMOTE
   - SPELL_INNER_FLAME
   - SPELL_FLAME_WAVE
+  - SPELL_FIREBALL
 equipment:
   - "robe"
   - "potion of magic"
