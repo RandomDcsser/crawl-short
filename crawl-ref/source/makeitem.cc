@@ -1308,6 +1308,9 @@ static void _generate_scroll_item(item_def& item, int force_type, int agent)
     item.quantity = random_choose_weighted(46, 1,
                                             1, 2,
                                             1, 3);
+    
+    if(item.sub_type == SCR_IDENTIFY)
+        item.quantity = 3;
 
     item.plus = 0;
 }
